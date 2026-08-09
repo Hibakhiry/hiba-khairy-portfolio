@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hiba Khairy — Graphic Designer Portfolio">
+  <title>Hiba Khairy | Graphic Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="navbar">
+    <a class="brand" href="#home">HIBA <span>KHAIRY</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <button class="lang" id="langBtn">العربية</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">GRAPHIC DESIGNER • CREATIVE VISUALS</p>
+        <h1>Designs that make<br><span>your brand memorable.</span></h1>
+        <p class="hero-text">I create visual identities, social media designs, print materials and creative layouts that communicate with clarity and style.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#work">Explore my work</a>
+          <a class="btn ghost" href="#contact">Let's work together</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <img class="hero-logo" src="assets/hiba-logo.png" alt="Heba Khairy logo">
+        <div class="card-note">Portfolio<br><strong>2026</strong></div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal"><span>01</span><h2>About Me</h2></div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">I’m <strong>Hiba Khairy</strong>, a graphic designer passionate about turning ideas into clear, beautiful visual experiences.</p>
+          <p>My portfolio brings together identity design, logo design, social media content, brochures, book covers and print materials. I care about composition, typography, consistency and presenting every project in a polished way.</p>
+        </div>
+        <div class="facts reveal">
+          <div><b>01</b><span>Visual Identity</span></div>
+          <div><b>02</b><span>Logo Design</span></div>
+          <div><b>03</b><span>Social Media</span></div>
+          <div><b>04</b><span>Print & Editorial</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-heading reveal"><span>02</span><h2>Services</h2></div>
+      <div class="service-grid">
+        <article class="service reveal"><div class="num">01</div><h3>Brand Identity</h3><p>Logo systems, visual direction, colors and brand applications.</p></article>
+        <article class="service reveal"><div class="num">02</div><h3>Social Media</h3><p>Creative posts, campaigns, promotional layouts and digital content.</p></article>
+        <article class="service reveal"><div class="num">03</div><h3>Print Design</h3><p>Business cards, stationery, posters, menus and marketing materials.</p></article>
+        <article class="service reveal"><div class="num">04</div><h3>Editorial Design</h3><p>Brochures, book covers, reports and structured publication layouts.</p></article>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="section-heading reveal"><span>03</span><h2>Selected Work</h2></div>
+      <div class="filters reveal" id="filters"></div>
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+      <div class="center"><a class="btn ghost" href="assets/portfolio.pdf" download>Download Full Portfolio PDF</a></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-box reveal">
+        <div><p class="eyebrow">LET'S CREATE</p><h2>Have a project<br><span>in mind?</span></h2></div>
+        <div class="contact-info">
+          <a href="mailto:hiba.art2025@hotmail.com">hiba.art2025@hotmail.com</a>
+          <a href="tel:+966593197977">+966 593 197 977</a>
+          <a href="https://wa.me/249916001077" target="_blank" rel="noopener">WhatsApp: +249 916 001 077</a>
+          <a href="#">Facebook | Hiba - Design</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Hiba Khairy</span><span>Graphic Designer</span></footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <button class="modal-prev" id="modalPrev">‹</button>
+    <img id="modalImage" src="" alt="">
+    <button class="modal-next" id="modalNext">›</button>
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
