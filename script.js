@@ -12,7 +12,7 @@ const projects = [
   ...range(31,35,'print','Print Design'),
   ...range(36,40,'brochure','Brochure Design')
 ];
-function range(start,end,category,title){return Array.from({length:end-start+1},(_,i)=>{const n=start+i;return {id:n,image:`images/page-${String(n).padStart(2,'0')}.jpg`,category,title:`${title} — Project ${n}`}})}
+function range(start,end,category,title){return Array.from({length:end-start+1},(_,i)=>{const n=start+i;return {id:n,image:image:`images/page-${String(n).padStart(2,'0')}.jpg`,category,title:`${title} — Project ${n}`}})}
 const categoryNames={all:'All',identity:'Visual Identity',logo:'Logo Design',social:'Social Media',brochure:'Brochure',book:'Book Cover',print:'Print Design'};
 let active='all', currentIndex=0;
 const grid=document.getElementById('portfolioGrid');
